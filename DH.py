@@ -27,7 +27,17 @@ class DH(object):
 
     @staticmethod
     def verify_gp(in_g, in_p):
-        """verfify selected g and p"""
+        """ (int, int) -> boolean
+
+        Verify that selected base in_g is greater than or equal 2
+        and less than or equal prime in_p minus 2.
+        Does not check if in_p is really a prime number.
+
+        >>> DH.verify_gp(in_g=10, in_p=11)
+        False
+        >>> DH.verify_gp(in_g=2, in_p=13)
+        True
+        """
         if 2 <= in_g <= (in_p - 2):
             return True
         return False
