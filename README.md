@@ -3,6 +3,9 @@ DiffieHellman
 
 Diffie-Hellman Keyexchange in Python
 
+[![Build
+Status](https://travis-ci.org/nmesstorff/DiffieHellman.png)](https://travis-ci.org/nmesstorff/DiffieHellman)
+
 Hacking
 -------
 To run the tests and create a test coverage report:
