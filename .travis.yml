@@ -8,10 +8,6 @@ python:
 before_script:
   - sudo apt-get install pychecker pylint pep8
 install:
-  - pip install pybuilder
-  - pip install flake8
-  - pip install mockito
-  - pip install coverage
 script: "python setup.py nosetests"
 notifications:
   email:
