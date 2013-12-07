@@ -1,6 +1,7 @@
 import unittest
 from DH import DH
 
+
 class TestDH(unittest.TestCase):
     # create a DH object and
     # set a fixed prvsecret instead of a random number
@@ -24,5 +25,4 @@ class TestDH(unittest.TestCase):
         self.assertEqual(self.alice.sharedsecret, self.bob.sharedsecret)
 
     def test_DH_init(self):
-        with self.assertRaises(ValueError):
-            DH(2,2)
+        self.assertRaises(ValueError, DH, 2, 2)
