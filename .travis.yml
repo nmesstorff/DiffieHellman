@@ -12,7 +12,7 @@ install:
   - pip install flake8
   - pip install mockito
   - pip install coverage
-script: "pyb --debug -v"
+script: "python setup.py nosetests"
 notifications:
   email:
     - normes@normes.org
